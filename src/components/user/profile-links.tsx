@@ -118,7 +118,7 @@ function parseBioText(text: string): React.ReactNode[] {
           rel="noopener noreferrer"
           className="text-primary hover:underline"
         >
-          {cleanedUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+          {url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
         </a>
       );
     } else if (match[2]) {
